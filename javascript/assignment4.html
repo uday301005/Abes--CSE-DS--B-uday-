@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart Navbar Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f3f6;
+        }
+
+        .navbar {
+            background: #b2b5ba;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            color: #fff;
+        }
+
+        .navbar .logo-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 32px;
+        }
+
+        .navbar #logoImg {
+            height: 40px;
+            margin-top: 4px;
+        }
+
+        .navbar .explore {
+            font-size: 11px;
+            color: #fff;
+            font-style: italic;
+            line-height: 1;
+            margin-top: -2px;
+        }
+
+        .navbar .explore span {
+            color: #ffe500;
+            font-weight: bold;
+        }
+
+        .navbar .search-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar #searchBox {
+            width: 400px;
+            height: 36px;
+            border: none;
+            border-radius: 2px 0 0 2px;
+            padding: 0 16px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .navbar #searchBtn {
+            width: 44px;
+            height: 36px;
+            background: #fff;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .navbar #searchIcon {
+            width: 20px;
+            height: 20px;
+            filter: invert(36%) sepia(98%) saturate(7492%) hue-rotate(210deg) brightness(97%) contrast(101%);
+        }
+
+        .navbar .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-left: 32px;
+        }
+
+        .navbar #loginBtn {
+            background: blue;
+            color: lightgrey;
+            border: none;
+            border-radius: 2px;
+            padding: 7px 40px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 8px;
+            transition: background 0.2s;
+        }
+
+        .navbar #loginBtn:hover {
+            background: #f0f0f0;
+        }
+
+        .navbar .seller {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .navbar .seller img {
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        .navbar .cart {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .navbar .cart img {
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 900px) {
+            .navbar #searchBox {
+                width: 200px;
+            }
+
+            .navbar .nav-actions {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-section">
+            <img id="logoImg"
+                src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                alt="Flipkart Logo">
+            <div class="explore">
+                Explore <span>Plus</span>
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+                    alt="Plus" style="height:10px;vertical-align:middle;">
+            </div>
+        </div>
+        <div class="search-section">
+            <input id="searchBox" type="text" placeholder="Search for products, brands and more">
+            <button id="searchBtn">
+                <img id="searchIcon"
+                    src="https://static.thenounproject.com/png/101791-200.png" alt="Search">
+            </button>
+        </div>
+        <div class="nav-actions">
+            <button id="loginBtn">Login</button>
+            <div class="seller">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                    alt="">
+                Become a Seller
+            </div>
+            <div class="cart">
+                <img id="cartIcon"
+                    src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/cart_9d5b0c.svg"
+                    alt="">
+                Cart
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
