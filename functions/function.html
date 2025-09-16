@@ -1,6 +1,6 @@
 <html>
 <head>
-    <style>
+    <!-- <style>
         #adi{
             border: 5px solid black;
             height: 300px;
@@ -8,8 +8,8 @@
             background-color: lightblue;
             margin: 20px;
         }
-    </style>
-    <script> 
+    </style> -->
+    <!-- <script> 
              function greet(name){
                 document.write("Hello " + name + "!");  
                 }
@@ -21,18 +21,25 @@
             }
             
             
-    </script>
+    </script> -->
 </head>
-<body>
-    <div id="adi">
-        <button onclick="changeText()" >click</button>
-        <p id = "hi"></p>
-    </div>
-    <script>
-        function changeText(){
-            document.getElementById("hi").innerHTML = "HELLO"
-        }
+<body id="ad">
+    <button onclick="colorChange(red)">RED</button>
+    <button onclick="colorChange(green)">GREEN</button>
+    <button onclick="colorChange(blue)">BLUE</button>
+
+  <script> 
+        // <!--
+        // function changeText(){
+        //     document.getElementById("hi").innerHTML = "HELLO"
+        // } -->
+            function colorChange(color){
+        document.getElementById("ad").style.backgroundColor = "red";
+      }
     </script>
+      
+
+     
     <!-- <h1>Functions in JavaScript</h1>
     <h2>Example 1: Function with parameter</h2>
     <button onclick="greet('Alice')">Greet Alice</button>
