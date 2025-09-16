@@ -1,5 +1,14 @@
 <html>
 <head>
+    <style>
+        #adi{
+            border: 5px solid black;
+            height: 300px;
+            width: 300px;
+            background-color: lightblue;
+            margin: 20px;
+        }
+    </style>
     <script> 
              function greet(name){
                 document.write("Hello " + name + "!");  
@@ -15,7 +24,16 @@
     </script>
 </head>
 <body>
-    <h1>Functions in JavaScript</h1>
+    <div id="adi">
+        <button onclick="changeText()" >click</button>
+        <p id = "hi"></p>
+    </div>
+    <script>
+        function changeText(){
+            document.getElementById("hi").innerHTML = "HELLO"
+        }
+    </script>
+    <!-- <h1>Functions in JavaScript</h1>
     <h2>Example 1: Function with parameter</h2>
     <button onclick="greet('Alice')">Greet Alice</button>
     <button onclick="greet('Bob')">Greet Bob</button>
@@ -24,7 +42,7 @@
     <button onclick="add(10, 20)">Add 10 and 20</button>
     <h2>Example 3: Function to subtract two numbers</h2>
     <button onclick="subtract(10, 4)">Subtract 4 from 10</button>
-    <button onclick="subtract(20, 5)">Subtract 5 from 20</button>
+    <button onclick="subtract(20, 5)">Subtract 5 from 20</button> -->
   
 </body>
 </html>
