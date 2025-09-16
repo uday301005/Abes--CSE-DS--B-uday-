@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .logoi {
+            /* border: 2px solid black; */
+            border-radius: 50%;
+            width: 80px;
+            height: 50px;
+            margin: 20px;
+        }
+        button {
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10%;
+            border: none;
+        }
+    </style>
+    <script>
+        var i=0;
+        function add() {
+            if(i>=10) 
+            alert("Maximum limit reached");
+            else i++;
+            document.getElementById("hi").innerHTML = i;
+        }
+        function subtract() {
+            if(i<=0) 
+            alert("Cannot go below 0");
+            else i--;
+            document.getElementById("hi").innerHTML = i;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+    <div class="logoi">
+   <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbymsnsa9pDFNK-_OdtPBcqvnfKmtKfL4M-Q&s" alt="logo">
+    </div>
+    <h1 style="margin-left: 30px;">Counter App</h1>
+    <h1 id="hi">0</h1>
+    <button style="background-color: red;" onclick="add()">+</button>
+    <button style="background-color: blue;" onclick="subtract()">-</button>
+    </div>
+</body>
+</html>
