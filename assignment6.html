@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display:flex; 
+            gap: 20px;
+       
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 250px;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            color: #007bff;
+            margin: 5px 0;
+        }
+          button {
+            /* background-color: #007bff; */
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+    </style>
+<body>
+    <div clas="container" >
+        <div class= "card" >
+         <center><h2>Student Deatils</h2></center>
+         <h4 >IT</h4>
+       <div id="b1s"></div>
+            <button onclick="showDetails('IT')">IT</button>
+        </div>
+        </div>
+        <div class = "card" >
+        <center><h2>Student Deatils</h2></center>
+         <h4 >CS</h4>
+         <div id="b2s"></div>
+            <button onclick="showDetails('CS')">Other Branch</button>
+        </div>
+        </div>
+    </div>
+    <script>
+      const student = [];
+
+    student[0] = { Name: "Jony", class: "Btech", Branch: "IT", Roll: 34 };
+    student[1] = { Name: "John", class: "Btech", Branch: "IT", Roll: 35 };
+    student[2] = { Name: "Narth", class: "Btech", Branch: "IT", Roll: 36 };
+    student[3] = { Name: "Jolly", class: "Btech", Branch: "CS", Roll: 37 };
+    student[4] = { Name: "Jack", class: "Btech", Branch: "CS", Roll: 38 };
+      
+    student.forEach(element => {
+        if(element.Branch === 'IT')
+            document.getElementById("b1s").innerHTML += element.Name + "<br>";
+        if(element.Branch === 'CS')
+            document.getElementById("b2s").innerHTML += element.Name + "<br>";
+    });
+     function showDetails(branch) {
+            let details = "";
+            student.forEach(s => {
+                if(s.Branch === branch) {
+                    details += `Name: ${s.Name} <br> Class: ${s.class} <br> Roll: ${s.Roll} <hr>`;
+                }
+            });
+
+            if(branch === 'IT') {
+                document.getElementById("b1s").innerHTML = details;
+            } else if(branch === 'CS') {
+                document.getElementById("b2s").innerHTML = details;
+            }
+        }
+    </script>
+    
+</body>
+</html>
