@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <script>
+        let func1 = (id) => {
+            setTimeout(() =>{
+              console.log(`data ${id}`);
+            },2000)
+          };
+
+          func1(1,()=>{
+            func1(2,()=>{
+              func1(3,()=>{
+                func1(4);
+              });
+            });
+          });
+          func1(60);
+         func1(7);  
+           
+    </script>
+</body>
+</html>
