@@ -5,10 +5,11 @@
 </head>
 <body>
     <script>
-        let func1 = (id) => {
+        let func1 = (id,func2) => {
             setTimeout(() =>{
               console.log(`data ${id}`);
             },2000)
+            if(func2) func2();
           };
 
           func1(1,()=>{
