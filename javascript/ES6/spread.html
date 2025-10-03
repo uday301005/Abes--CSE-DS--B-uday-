@@ -4,11 +4,14 @@
     
 </head>
 <body>
+   
+    <div id="demo"></div>
+     
     <script>
         const a1 = [1, 2, 3, 4];
         const a2 = [6, 8, 9, 11];
         const a3 = [...a1 , ...a2];
-        document.write(a3);
+        // document.write(a3);
 
         const p1 = {
             firstname: "abes",
@@ -16,11 +19,50 @@
             age: 30,
         };
         const p2 = {
-            city: "New York",
-            country: "USA",
+            city: "Ghaziabad",
+            country: "India",
         };
 
-        const copyPerson = {...p1, ...p2};
+        const y= {...p1, ...p2};
+        // document.write(y);
+        const college = {
+            name: "ABES",
+            location: "Ghaziabad",
+            code : 32,
+            established: 2000,
+            courses: ["CSE", "IT", "ECE", "EEE", "ME", "CE"],
+        };
+        const library = [
+           {
+            bookName: "JavaScript",
+            bookAuthor: "XYZ",
+            bookPage: 500,
+           },
+           {
+            bookName: "Python",
+            bookAuthor: "ABC",
+            bookPage: 600,
+           },
+            {
+            bookName: "Java",
+            bookAuthor: "PQR",
+            bookPage: 700,
+            },
+            {
+            bookName: "C++",
+            bookAuthor: "LMN",  
+            bookPage: 800,
+            },
+            {
+            bookName: "HTML",
+            bookAuthor: "EFG",
+            bookPage: 900,
+            }
+           ];
+           const  coll = {...college, ...library};
+              document.write(JSON.stringify(coll));
+            //   document.write(JSON.stringify(y));
+        //    document.getElementById("demo").innerHTML = y;
     </script>
 </body>
 </html>
