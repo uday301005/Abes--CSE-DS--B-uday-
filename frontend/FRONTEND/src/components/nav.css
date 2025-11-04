@@ -1,0 +1,16 @@
+#nav{
+    height: 100px;
+    background-color: cadetblue;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+        gap : 20px;
+}
+li {
+   font-size: 25px;
+}

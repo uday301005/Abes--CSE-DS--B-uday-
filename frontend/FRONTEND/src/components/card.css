@@ -1,0 +1,9 @@
+#card{
+    border: 5px solid red;
+    height:150px;
+    width: 400px;
+    /* display: flex; */
+   
+
+    margin: auto;
+}
