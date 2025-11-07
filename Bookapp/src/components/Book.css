@@ -1,0 +1,20 @@
+#book{
+    border: 1px solid black;
+    height: 400px;
+    width: 390px;
+    margin: 20px;
+    background-color: lightgrey;
+}
+h1{
+    text-align: center;
+}
+img{
+
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

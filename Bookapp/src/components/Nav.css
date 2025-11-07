@@ -1,0 +1,23 @@
+#div{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+   
+}
+
+li {
+    list-style-type: none;
+    /* line-height: 100px; */
+    margin: 10px;
+}
